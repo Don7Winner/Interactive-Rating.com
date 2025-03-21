@@ -1,0 +1,123 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+form {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  width: 400px;
+  /* display: none; */
+}
+.star-img {
+  margin-bottom: 2rem;
+}
+.star-img img {
+  background-color: rgba(111, 123, 139, 0.1);
+  border-radius: 1.5rem;
+  padding: 0.8rem;
+  display: inline;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+.clickButton {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  /* gap: 1.8rem; */
+  margin-bottom: 2rem;
+  list-style: none;
+}
+.clickButton button {
+  background-color: rgba(111, 123, 139, 0.1);
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+}
+.clickButton button:hover,
+.clickButton button:active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+}
+.clickButton button:focus {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+.btn {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  display: block;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.TnxMessage {
+  background-color: rgba(111, 123, 139, 0.1);
+  color: hsl(25, 97%, 53%);
+  border-radius: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  margin: 0 auto 1rem;
+}
+/* THE STARTING OF THE OUTCOME  */
+.interactive-outcome {
+  background-color: hsl(212, 24%, 14%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  display: none;
+}
+#p {
+  margin-top: 1rem;
+}
+.active {
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: red;
+  color: hsl(213, 19%, 18%);
+}
+
+/* THE STARTING OF THE MOBILE RESPONSIVENESS  */
+@media (max-width: 460px) {
+  form {
+    width: 300px;
+  }
+  .click-button {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 420px) {
+  main {
+    width: 230px;
+  }
+}
